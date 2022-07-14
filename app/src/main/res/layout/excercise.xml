@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/ExerciseImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/ExerciseNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/ExerciseImageView"
+        app:layout_constraintTop_toBottomOf="@+id/ExerciseImageView" />
+
+    <TextView
+        android:id="@+id/ExerciseSeriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/ExerciseNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ExerciseNameTextView" />
+
+    <TextView
+        android:id="@+id/ExerciseRepetitionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/ExerciseSeriesTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ExerciseSeriesTextView" />
+
+    <TextView
+        android:id="@+id/ExerciseRestTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/ExerciseRepetitionsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ExerciseRepetitionsTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
