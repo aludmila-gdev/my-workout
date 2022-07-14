@@ -4,7 +4,7 @@ import com.example.myworkout.R
 import com.example.myworkout.model.Exercise
 
 object ExerciseDataSource {
-    val Exercises: List<Exercise> = listOf(
+    val exercises: List<Exercise> = listOf(
         Exercise(
             R.drawable.abdominal,
             "Abdominal",
