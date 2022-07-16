@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        supportActionBar?.hide()
         val dataSet = ExerciseDataSource.exercises
 
         val recyclerView = findViewById<RecyclerView>(R.id.exercise_list_recycler_view)
