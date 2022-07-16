@@ -3,15 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/white">
 
 
     <ImageView
         android:id="@+id/ExerciseImageView"
-        android:contentDescription="@string/image_content_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="53dp"
+        android:contentDescription="@string/image_content_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -19,34 +21,43 @@
 
     <TextView
         android:id="@+id/ExerciseNameTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="TextView"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/ExerciseImageView"
         app:layout_constraintTop_toBottomOf="@+id/ExerciseImageView" />
 
     <TextView
         android:id="@+id/ExerciseSeriesTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/ExerciseNameTextView"
         app:layout_constraintTop_toBottomOf="@+id/ExerciseNameTextView" />
 
     <TextView
         android:id="@+id/ExerciseRepetitionsTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/ExerciseSeriesTextView"
         app:layout_constraintTop_toBottomOf="@+id/ExerciseSeriesTextView" />
 
     <TextView
         android:id="@+id/ExerciseRestTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/ExerciseRepetitionsTextView"
         app:layout_constraintTop_toBottomOf="@+id/ExerciseRepetitionsTextView" />
 
